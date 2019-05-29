@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>eduke32</id>
+    <version>7.6.57</version>
+    <packageSourceUrl>https://github.com/n3rd4i/eduke32.git</packageSourceUrl>
+    <owners>n3rd4i</owners>
+    <title>eduke32 (Install)</title>
+    <authors>Richard "TerminX" Gobeille</authors>
+    <projectUrl>http://eduke32.com/</projectUrl>
+    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/eduke32.png</iconUrl>-->
+    <!-- <copyright>Year Software Vendor</copyright> -->
+    <!-- If there is a license Url available, it is required for the community feed -->
+    <licenseUrl>http://eduke32.com</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://wiki.eduke32.com/wiki/Acquiring_the_EDuke32_Source_Code</projectSourceUrl>
+    <docsUrl>http://wiki.eduke32.com/wiki/Main_Page</docsUrl>
+    <mailingListUrl>http://eduke32.com/contact</mailingListUrl>
+    <bugTrackerUrl>http://forums.duke4.net/index.php?showforum=26</bugTrackerUrl>
+    <tags>eduke32 duke3d duke nukem</tags>
+    <summary>Duke Nukem 3D game engine</summary>
+    <description>
+    EDuke32 is an awesome, free homebrew game engine and source port of the classic PC first person shooter Duke Nukem 3D— Duke3D for short—to Windows, Linux, Mac OS X, FreeBSD, several handhelds, your family toaster, and to your girlfriend's vibrator. We've added thousands of cool and useful features and upgrades for regular players and additional editing capabilities and scripting extensions for homebrew developers and mod creators. EDuke32 is open source software that is completely free to use for all non-commercial purposes.
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
