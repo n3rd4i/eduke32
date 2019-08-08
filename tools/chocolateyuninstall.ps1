@@ -1,6 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
-$installLocation = "$ENV:LOCALAPPDATA\Programs\Eduke32\*"
-$shortcutPath = "$ENV:UserProfile\Desktop\Eduke32.lnk"
+$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+. "$(Join-Path $toolsDir commonEnv.ps1)"
+
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'eduke32*'  #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
@@ -26,4 +27,5 @@ if ($key.Count -eq 1) {
   $key | % {Write-Warning "- $($_.DisplayName)"}
 }
 Remove-Item $installLocation -exclude *.ini -recurse -force
+Remove-Item $startMenuDir -recurse -force
 Remove-Item $shortcutPath -force

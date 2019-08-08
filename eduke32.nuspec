@@ -2,16 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>eduke32</id>
-    <version>7.6.57</version>
+    <version>2019.08.07.7927</version>
     <packageSourceUrl>https://github.com/n3rd4i/eduke32.git</packageSourceUrl>
     <owners>n3rd4i</owners>
     <title>eduke32 (Install)</title>
     <authors>Richard "TerminX" Gobeille</authors>
     <projectUrl>http://eduke32.com/</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/eduke32.png</iconUrl>-->
-    <!-- <copyright>Year Software Vendor</copyright> -->
-    <!-- If there is a license Url available, it is required for the community feed -->
-    <licenseUrl>http://eduke32.com</licenseUrl>
+    <iconUrl>https://cdn.statically.io/img/eduke32.com/images/eduke32.png</iconUrl>
+    <copyright>1991 GNU GENERAL PUBLIC LICENSE</copyright>
+    <licenseUrl>https://svn.eduke32.com/eduke32/source/sw/gpl-2.0.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://wiki.eduke32.com/wiki/Acquiring_the_EDuke32_Source_Code</projectSourceUrl>
     <docsUrl>http://wiki.eduke32.com/wiki/Main_Page</docsUrl>
