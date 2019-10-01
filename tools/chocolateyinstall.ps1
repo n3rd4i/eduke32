@@ -2,13 +2,13 @@
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 . "$(Join-Path $toolsDir commonEnv.ps1)"
 
-$url = 'https://dukeworld.com/eduke32/synthesis/20190901-8072/eduke32_win64_20190901-8072.7z'
+$url = 'https://dukeworld.com/eduke32/synthesis/20190919-8133/eduke32_win64_20190919-8133.7z'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $installLocation
   url           = $url
   softwareName  = 'eduke32*'
-  checksum      = 'C171BF265A58498B5787438CF6EDAF051E972FA4CB898D43E1CAEC83F41DABC3'
+  checksum      = '97062BE841210377B31F0C016CD20604F9C7F6329855D19E6EAC71C728CB8F3C'
   checksumType  = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
