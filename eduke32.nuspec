@@ -10,7 +10,7 @@
     <projectUrl>http://eduke32.com/</projectUrl>
     <iconUrl>https://cdn.statically.io/img/eduke32.com/images/eduke32.png</iconUrl>
     <copyright>1991 GNU GENERAL PUBLIC LICENSE</copyright>
-    <licenseUrl>https://svn.eduke32.com/eduke32/source/sw/gpl-2.0.txt</licenseUrl>
+    <licenseUrl>http://www.gnu.org/licenses/gpl2.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://wiki.eduke32.com/wiki/Acquiring_the_EDuke32_Source_Code</projectSourceUrl>
     <docsUrl>http://wiki.eduke32.com/wiki/Main_Page</docsUrl>
