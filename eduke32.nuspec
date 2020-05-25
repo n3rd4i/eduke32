@@ -2,10 +2,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>eduke32</id>
-    <version>2020.03.13.8751</version>
-    <packageSourceUrl>https://github.com/n3rd4i/eduke32.git</packageSourceUrl>
+    <version>2020.05.25.9041</version>
+    <packageSourceUrl>https://github.com/n3rd4i/eduke32</packageSourceUrl>
     <owners>n3rd4i</owners>
-    <title>eduke32 (Install)</title>
+    <title>EDuke32</title>
     <authors>Richard "TerminX" Gobeille</authors>
     <projectUrl>http://eduke32.com/</projectUrl>
     <iconUrl>https://cdn.statically.io/img/eduke32.com/images/eduke32.png</iconUrl>
@@ -28,6 +28,10 @@
     </description>
     <releaseNotes>https://dukeworld.com/eduke32/synthesis/20190901-8072/ChangeLog.txt</releaseNotes>
     <!-- ===============================       -->
+
+    <dependencies>
+      <dependency id="kb2919355" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
