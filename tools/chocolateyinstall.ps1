@@ -2,11 +2,10 @@
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 . "$(Join-Path $toolsDir commonEnv.ps1)"
 
-$url = 'https://dukeworld.com/eduke32/synthesis/20200525-9041-249a40a1d/eduke32_win64_20200525-9041-249a40a1d.7z'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $installLocation
-  url           = $url
+  url           = 'https://dukeworld.com/eduke32/synthesis/20200525-9041-249a40a1d/eduke32_win64_20200525-9041-249a40a1d.7z'
   checksum      = 'E270364886272F2D998AD2915D9537C84E8C152E6E8DD7A1215E5437AB6A6A45'
   checksumType  = 'sha256'
 }
