@@ -12,7 +12,6 @@ function global:au_SearchReplace {
   }
 }
 
-# url           = 'https://dukeworld.com/eduke32/synthesis/20200525-9041-249a40a1d/eduke32_win64_20200525-9041-249a40a1d.7z'
 function global:au_GetLatest {
   $folders_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
   $regex = '\d{4}\d{2}\d{2}-\d{4}-\w{9}' # hash included version
@@ -32,6 +31,3 @@ function global:au_GetLatest {
 }
 
 update -ChecksumFor 32
-
-# Reference:
-# https://github.com/majkinetor/au/blob/master/README.md#creating-the-package-updater-script
