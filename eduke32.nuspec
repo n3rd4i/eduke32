@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>eduke32</id>
-    <version>2020.06.13.9150</version>
+    <version>2020.06.17.9156</version>
     <packageSourceUrl>https://github.com/n3rd4i/eduke32</packageSourceUrl>
     <owners>n3rd4i</owners>
     <title>EDuke32</title>
