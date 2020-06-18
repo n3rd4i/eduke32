@@ -4,4 +4,3 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 Remove-Item $installLocation -exclude *.ini -recurse -force
 Remove-Item $startMenuDir -recurse -force
-Remove-Item $shortcutPath -force
