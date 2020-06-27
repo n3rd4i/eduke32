@@ -4,10 +4,13 @@ $domain   = 'https://dukeworld.com'
 $releases = "$domain/eduke32/synthesis"
 
 function global:au_SearchReplace {
-  @{ 
+  @{
     ".\tools\chocolateyInstall.ps1" = @{
       "(?i)(^\s*url\s*=\s*)('.*')"          = "`$1'$($Latest.URL32)'"
       "(?i)(^\s*checksum\s*=\s*)('.*')"   	= "`$1'$($Latest.Checksum32)'"
+    },
+    ".\eduke32.nuspec" = @{ # https://dukeworld.com/eduke32/synthesis/20190901-8072/ChangeLog.txt
+      "\<releaseNotes\>.+" = "<releaseNotes>$($Latest.ReleaseNotes)</releaseNotes>"
     }
   }
 }
@@ -27,7 +30,8 @@ function global:au_GetLatest {
   $semantic_ver = [regex]::split($tokens[0], '(\d{4})(\d{2})(\d{2})') | Where-Object { $_ }
   $version_pre = $semantic_ver -join '.'
   $version = ($version_pre, $tokens[1]) -join '.'
-  return @{ Version = $version; URL32 = $url }
+  $release_notes = ('https://dukeworld.com/eduke32/synthesis', $raw_version, 'ChangeLog.txt') -join '/'
+  return @{ Version = $version; URL32 = $url; ReleaseNotes = $release_notes }
 }
 
 update -ChecksumFor 32
