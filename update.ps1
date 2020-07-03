@@ -8,8 +8,8 @@ function global:au_SearchReplace {
     ".\tools\chocolateyInstall.ps1" = @{
       "(?i)(^\s*url\s*=\s*)('.*')"          = "`$1'$($Latest.URL32)'"
       "(?i)(^\s*checksum\s*=\s*)('.*')"   	= "`$1'$($Latest.Checksum32)'"
-    },
-    ".\eduke32.nuspec" = @{ # https://dukeworld.com/eduke32/synthesis/20190901-8072/ChangeLog.txt
+    }
+    ".\eduke32.nuspec" = @{
       "\<releaseNotes\>.+" = "<releaseNotes>$($Latest.ReleaseNotes)</releaseNotes>"
     }
   }
