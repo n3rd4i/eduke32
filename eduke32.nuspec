@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>eduke32</id>
-    <version>2020.08.29.9253</version>
+    <version>2020.09.07.9257</version>
     <packageSourceUrl>https://github.com/n3rd4i/eduke32</packageSourceUrl>
     <owners>n3rd4i</owners>
     <title>EDuke32</title>
@@ -27,7 +27,7 @@ EDuke32 is an awesome, free homebrew game engine and source port of the classic 
 Created by Duke4.net community leader Richard "TerminX" Gobeille and a team of elite ninja programmers including Pierre-Loup "Plagman" Griffais, Philipp "Helixhorned" Kutin, and Evan "Hendricks266" Ramos (based on work by Todd Replogle/Ken Silverman/Jonathon Fowler/Matt Saettler), EDuke32 is the undeniable king of Duke Nukem 3D ports.
 
     </description>
-    <releaseNotes>https://dukeworld.com/eduke32/synthesis/20200829-9253-156963ddc/ChangeLog.txt</releaseNotes>
+    <releaseNotes>https://dukeworld.com/eduke32/synthesis/20200907-9257-93f62bbad/ChangeLog.txt</releaseNotes>
     <!-- ===============================       -->
 
     <dependencies>
