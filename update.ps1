@@ -20,7 +20,7 @@ function global:au_GetLatest {
   $regex = '\d{4}\d{2}\d{2}-\d{4}-\w{9}' # hash included version
   $folder = $folders_page.links | ? href -match $regex | select -First 1 -expand href
   $download_page = Invoke-WebRequest -Uri "$releases/$folder" -UseBasicParsing
-  $regex = '.7z$'
+  $regex = 'eduke32_win64_.*.7z$'
   $url_file = $download_page.links | ? href -match $regex | select -First 1 -expand href
   $url = ("$releases/$folder", $url_file)  -join ''
 
