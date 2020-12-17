@@ -5,8 +5,8 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $installLocation
-  url           = 'https://dukeworld.com/eduke32/synthesis/20201205-9278-2b9da706b/eduke32_win64_20201205-9278-2b9da706b.7z'
-  checksum      = 'ef489c94cad2c1bee698abe3fa3ae3249ebaf5f4cb72fe70f54ab8e4173e378e'
+  url           = 'https://dukeworld.com/eduke32/synthesis/20201214-9286-74aceda66/eduke32_win64_20201214-9286-74aceda66.7z'
+  checksum      = '94fc8414fde8ec3ed519c4a63f29577109cfb6d19adb36981a0ae70996994bf6'
   checksumType  = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
